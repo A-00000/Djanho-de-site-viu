@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insalubridade e fisica. Site do Djanho!</title>
+    <link rel="icon" href="calculo-removebg-preview.png" type="image/x-icon"> <!-- Link para o favicon -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Insalubridade e Física</h1>
+    </header>
+
+    <div class="container">
+        <!-- Seção de Cálculo de Insalubridade e NR-15 -->
+        <section id="insalubridade-section">
+            <div class="section-header">
+                <h2>Cálculo de Insalubridade</h2>
+            </div>
+            <div class="section-content">
+                <form id="formInsalubridade">
+                    <label for="nivelRuido">Nível de Ruído (dB):</label>
+                    <input type="number" id="nivelRuido" placeholder="Digite o nível de ruído" required>
+
+                    <label for="tempoExposicao">Tempo de Exposição (horas):</label>
+                    <input type="number" id="tempoExposicao" placeholder="Digite o tempo de exposição" required>
+
+                    <label for="salarioUsuario">Salário Base (R$):</label>
+                    <input type="number" id="salarioUsuario" placeholder="Digite o salário" required>
+
+                    <button type="button" onclick="calcularInsalubridade()">Calcular Insalubridade</button>
+                </form>
+
+                <div id="resultadoInsalubridade" class="resultado"></div>
+                <div id="grauInsalubridade" class="resultado"></div>
+                <div id="percentualInsalubridade" class="resultado"></div>
+            </div>
+
+            <!-- Seção de Informação sobre NR-15 -->
+            <section id="nr15-info">
+                <h3>Importância da NR-15</h3>
+                <p>A Norma Regulamentadora 15 (NR-15) regulamenta as atividades insalubres que podem comprometer a saúde do trabalhador devido à exposição a agentes prejudiciais. Ela estabelece limites e parâmetros para ruído, radiação, temperaturas e outros fatores, garantindo que os trabalhadores em ambientes insalubres tenham direito a adicionais compensatórios.</p>
+            </section>
+        </section>
+
+        <hr>
+
+        <!-- Seção de Física -->
+        <section id="fisica-section">
+            <div class="section-header">
+                <h2>Área de Física</h2>
+            </div>
+            <div class="section-content">
+                <p>Esta seção é dedicada a conteúdos gerais de física. Aqui você pode aprender conceitos e realizar cálculos importantes no mundo da física.</p>
+
+                <h3>Introdução à Lei de Ohm</h3>
+                <p>A Lei de Ohm estabelece que a corrente elétrica (I) em um circuito é diretamente proporcional à tensão (V) e inversamente proporcional à resistência (R). A fórmula é:</p>
+                <p><strong>V = I × R</strong></p>
+                <p>Com esta fórmula, você pode calcular qualquer uma das três variáveis (tensão, corrente ou resistência) se conhecer as outras duas.</p>
+
+                <h3>Calculadora da Lei de Ohm</h3>
+                <form id="formFisica">
+                    <label for="tensao">Tensão (V):</label>
+                    <input type="number" id="tensao" placeholder="Digite a tensão" step="any">
+
+                    <label for="resistencia">Resistência (Ω):</label>
+                    <input type="number" id="resistencia" placeholder="Digite a resistência" step="any">
+
+                    <label for="corrente">Corrente (I) - opcional:</label>
+                    <input type="number" id="corrente" placeholder="Digite a corrente" step="any">
+
+                    <button type="button" onclick="calcularOhm()">Calcular</button>
+                </form>
+
+                <div id="resultadoOhm" class="resultado"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

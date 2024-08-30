@@ -1,0 +1,116 @@
+/* Estilo geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #00bcd4, #0097a7); /* Gradiente azul */
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; /* Texto branco */
+    border-bottom: 5px solid #0097a7; /* Azul escuro */
+}
+
+/* Container Principal */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Fundo mais escuro */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Seções */
+#insalubridade-section, #fisica-section {
+    margin-bottom: 30px;
+}
+
+/* Seções de Header e Conteúdo */
+.section-header {
+    border-bottom: 2px solid #00bcd4; /* Azul ciano */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    color: #00bcd4; /* Azul ciano */
+}
+
+.section-content {
+    padding: 20px;
+    background-color: #2c2c2c; /* Escuro, mas menos que o fundo */
+    border-radius: 10px;
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00bcd4; /* Azul ciano */
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #00bcd4; /* Azul ciano */
+}
+
+form button {
+    width: 100%;
+    background-color: #00e676; /* Verde neon */
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #00c853; /* Verde mais escuro */
+}
+
+/* Resultados */
+.resultado {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #333;
+    border-left: 6px solid #00bcd4; /* Azul ciano */
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+/* Seção de Informação */
+#nr15-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    color: #e0e0e0;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
